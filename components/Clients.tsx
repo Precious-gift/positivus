@@ -1,8 +1,6 @@
 import React from "react";
-interface ClientProps {
-  imgSrc: string;
-  alt: string;
-}
+import { ClientProps } from "@/types";
+
 const clientList: ClientProps[] = [
   { imgSrc: "/positivus_amazon_logo.svg", alt: "amazon logo" },
   { imgSrc: "/positivus_dribbble_logo.svg", alt: "dribbble logo" },
