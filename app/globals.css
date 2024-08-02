@@ -39,3 +39,80 @@ body {
     text-wrap: balance;
   }
 }
+
+/* START: General styles */
+.card {
+  @apply drop-shadow;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 1px 4px 1px;
+  border-radius: 45px;
+  padding: 50px;
+}
+
+.leading-custom {
+  line-height: 2.6;
+}
+/* END: General styles */
+
+/* START: Services styles */
+.arrow-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-50 {
+  bottom: 50px;
+}
+
+/* START: Gray theme */
+.service-card-gray-theme {
+  @apply bg-gray-100;
+}
+
+.service-card-gray-theme h3 span {
+  @apply bg-themeGreen;
+}
+
+.service-card-gray-theme .arrow-circle {
+  @apply bg-black;
+}
+/* END: Gray theme */
+
+/* START: Green theme */
+.service-card-green-theme {
+  @apply bg-themeGreen;
+}
+
+.service-card-green-theme h3 span {
+  @apply bg-white;
+}
+
+.service-card-green-theme .arrow-circle {
+  @apply bg-black;
+}
+/* END: Green theme */
+
+/* START: Black theme */
+.service-card-black-theme {
+  @apply bg-black;
+}
+
+.service-card-black-theme h3 span {
+  @apply bg-white;
+}
+
+.service-card-black-theme .arrow-circle {
+  @apply bg-white;
+}
+
+.service-card-black-theme .arrow-text {
+  @apply text-white;
+}
+/* END: Black theme */
+
+/* END: Services styles */
