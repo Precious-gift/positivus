@@ -50,6 +50,10 @@ body {
   padding: 50px;
 }
 
+.rounded-custom {
+  border-radius: 45px;
+}
+
 .leading-custom {
   line-height: 2.6;
 }

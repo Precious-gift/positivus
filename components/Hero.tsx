@@ -17,7 +17,7 @@ const Hero = () => {
           </p>
           <CustomButton
             title="Book a consultation"
-            containerStyles="mt-4 w-full sm:w-auto sm:relative absolute bottom-0"
+            containerStyles="mt-4 w-full text-xl sm:w-auto sm:relative absolute bottom-0"
           />
         </div>
         <div className="basis-full md:basis-5/12 flex justify-center mt-10 sm:mt-0">

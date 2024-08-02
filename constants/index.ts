@@ -11,11 +11,13 @@ interface ServicesListProps {
   cardImageUrl: string;
 }
 
-export const servicesInfo: ServicesInfoProps = {
-  title: "Services",
-  description:
-    "At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:",
-};
+export const sectionList: ServicesInfoProps[] = [
+  {
+    title: "Services",
+    description:
+      "At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:",
+  },
+];
 
 export const servicesList: ServicesListProps[] = [
   {
