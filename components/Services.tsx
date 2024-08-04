@@ -4,7 +4,7 @@ import { servicesList, sectionList } from "@/constants";
 
 const Services = () => {
   return (
-    <section className="mb-4">
+    <section className="mb-36">
       <SectionHeader
         title={sectionList[0].title}
         description={sectionList[0].description}

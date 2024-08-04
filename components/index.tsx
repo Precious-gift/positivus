@@ -5,6 +5,7 @@ import Clients from "./Clients";
 import Services from "./Services";
 import SectionHeader from "./SectionHeader";
 import ServiceCard from "./ServiceCard";
+import CaseStudies from "./CaseStudies";
 
 export {
   Navbar,
@@ -14,4 +15,5 @@ export {
   Services,
   SectionHeader,
   ServiceCard,
+  CaseStudies,
 };
