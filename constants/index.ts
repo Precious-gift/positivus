@@ -22,6 +22,10 @@ export const sectionList: ServicesInfoProps[] = [
     description:
       "Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies",
   },
+  {
+    title: "Our Working Process",
+    description: "Step-by-Step Guide to Achieving Your Business Goals",
+  },
 ];
 
 export const servicesList: ServicesListProps[] = [

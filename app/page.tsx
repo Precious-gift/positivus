@@ -1,4 +1,4 @@
-import { CaseStudies, Hero, Services } from "@/components";
+import { CaseStudies, Hero, Services, WorkingProcess } from "@/components";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,6 +7,7 @@ export default function Home() {
       <Hero />
       <Services />
       <CaseStudies />
+      <WorkingProcess />
     </div>
   );
 }
