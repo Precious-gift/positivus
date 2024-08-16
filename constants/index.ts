@@ -11,6 +11,13 @@ interface ServicesListProps {
   cardImageUrl: string;
 }
 
+export interface ProcessListProps {
+  id: string;
+  title: string;
+  description: string;
+  active: boolean;
+}
+
 export const sectionList: ServicesInfoProps[] = [
   {
     title: "Services",
@@ -71,4 +78,49 @@ export const caseStudiesList: String[] = [
   "For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.",
   "For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.",
   "For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.",
+];
+
+export const processList: ProcessListProps[] = [
+  {
+    id: "01",
+    title: "Consultation",
+    description:
+      "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+    active: true,
+  },
+  {
+    id: "02",
+    title: "Research and Strategy Development",
+    description:
+      "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+    active: false,
+  },
+  {
+    id: "03",
+    title: "Implementation",
+    description:
+      "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+    active: false,
+  },
+  {
+    id: "04",
+    title: "Monitoring and Optimization",
+    description:
+      "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+    active: false,
+  },
+  {
+    id: "05",
+    title: "Reporting and Communication",
+    description:
+      "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+    active: false,
+  },
+  {
+    id: "06",
+    title: "Continual Improvement",
+    description:
+      "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+    active: false,
+  },
 ];

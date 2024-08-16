@@ -1,6 +1,6 @@
 import React from "react";
-import { SectionHeader } from "@/components";
-import { sectionList } from "@/constants";
+import { ProcessCard, SectionHeader } from "@/components";
+import { processList, sectionList } from "@/constants";
 
 const WorkingProcess = () => {
   return (
@@ -9,6 +9,12 @@ const WorkingProcess = () => {
         title={sectionList[2].title}
         description={sectionList[2].description}
       />
+
+      <div className="mt-20 grid grid-cols-1 gap-10">
+        {processList.map((process) => (
+          <ProcessCard key={process.id} {...process} />
+        ))}
+      </div>
     </section>
   );
 };

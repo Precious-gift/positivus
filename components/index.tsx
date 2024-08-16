@@ -7,6 +7,7 @@ import SectionHeader from "./SectionHeader";
 import ServiceCard from "./ServiceCard";
 import CaseStudies from "./CaseStudies";
 import WorkingProcess from "./WorkingProcess";
+import ProcessCard from "./ProcessCard";
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   ServiceCard,
   CaseStudies,
   WorkingProcess,
+  ProcessCard,
 };
