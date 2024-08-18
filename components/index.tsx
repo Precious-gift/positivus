@@ -8,6 +8,8 @@ import ServiceCard from "./ServiceCard";
 import CaseStudies from "./CaseStudies";
 import WorkingProcess from "./WorkingProcess";
 import ProcessCard from "./ProcessCard";
+import Team from "./Team";
+import TeamCard from "./TeamCard";
 
 export {
   Navbar,
@@ -20,4 +22,6 @@ export {
   CaseStudies,
   WorkingProcess,
   ProcessCard,
+  Team,
+  TeamCard,
 };

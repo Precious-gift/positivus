@@ -11,21 +11,20 @@ const ProcessCard = ({ id, title, description, active }: ProcessListProps) => {
   return (
     <div className={`card ${isActive ? "bg-themeGreen" : "bg-gray-100"}`}>
       <div className="grid grid-cols-[10%_auto_20%] gap-3 items-center">
-        <h1 className="text-[60px] justify-self-center">{id}</h1>
-        <h4 className="text-[30px]">{title}</h4>
+        <h1 className="text-[30px] sm:text-[60px] justify-self-center">{id}</h1>
+        <h4 className="text-[15px] sm:text-[30px]">{title}</h4>
         <div className="justify-self-end">
           <span
-            className="circle border border-black w-[50px] h-[50px] bg-white cursor-pointer"
+            className="circle border border-black w-[25px] h-[25px] sm:w-[50px] sm:h-[50px] bg-white cursor-pointer"
             onClick={toggleActive}
           >
-            <Image
+            <img
               src={`${
                 isActive
                   ? "/positivus_minus_icon.svg"
                   : "/positivus_plus_icon.svg"
               }`}
-              width={25}
-              height={25}
+              className="w-[15px] h-[15px] sm:w-[25px] sm:h-[25]"
               alt="arrow icon"
             />
           </span>

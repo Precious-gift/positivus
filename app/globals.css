@@ -47,7 +47,7 @@ body {
   border-color: black;
   border-width: 1px 1px 4px 1px;
   border-radius: 45px;
-  padding: 50px;
+  padding: 35px;
 }
 
 .rounded-custom {
@@ -127,3 +127,21 @@ body {
 /* END: Black theme */
 
 /* END: Services styles */
+
+/* START: Team styles */
+.team-star {
+  width: 50px;
+  height: 50px;
+  background-color: gold;
+  clip-path: polygon(
+    50% 15%,
+    100% 0%,
+    85% 50%,
+    100% 100%,
+    50% 85%,
+    0% 100%,
+    15% 50%,
+    0% 0%
+  );
+}
+/* END: Team styles */

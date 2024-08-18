@@ -18,6 +18,13 @@ export interface ProcessListProps {
   active: boolean;
 }
 
+export interface TeamListProps {
+  name: string;
+  title: string;
+  description: string;
+  imageUrl: string;
+}
+
 export const sectionList: ServicesInfoProps[] = [
   {
     title: "Services",
@@ -32,6 +39,11 @@ export const sectionList: ServicesInfoProps[] = [
   {
     title: "Our Working Process",
     description: "Step-by-Step Guide to Achieving Your Business Goals",
+  },
+  {
+    title: "Team",
+    description:
+      "Meet the skilled and experienced team behind our successful digital marketing strategies",
   },
 ];
 
@@ -122,5 +134,50 @@ export const processList: ProcessListProps[] = [
     description:
       "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
     active: false,
+  },
+];
+
+export const teamList: TeamListProps[] = [
+  {
+    name: "John Smith",
+    title: "CEO and Founder",
+    description:
+      "10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy",
+    imageUrl: "/positivus_team_john_img.png",
+  },
+  {
+    name: "Jane Doe",
+    title: "Director of Operations",
+    description:
+      "7+ years of experience in project management and team leadership. Strong organizational and communication skills",
+    imageUrl: "/positivus_team_jane_img.png",
+  },
+  {
+    name: "Michael Brown",
+    title: "Senior SEO Specialist",
+    description:
+      "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",
+    imageUrl: "/positivus_team_michael_img.png",
+  },
+  {
+    name: "Emily Johnson",
+    title: "PPC Manager",
+    description:
+      "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
+    imageUrl: "/positivus_team_emily_img.png",
+  },
+  {
+    name: "Brian Williams",
+    title: "Social Media Specialist",
+    description:
+      "4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement",
+    imageUrl: "/positivus_team_brian_img.png",
+  },
+  {
+    name: "Sarah Kim",
+    title: "Content Creator",
+    description:
+      "2+ years of experience in writing and editing Skilled in creating compelling, SEO-optimized content for various industries",
+    imageUrl: "/positivus_team_sarah_img.png",
   },
 ];
