@@ -10,6 +10,7 @@ import WorkingProcess from "./WorkingProcess";
 import ProcessCard from "./ProcessCard";
 import Team from "./Team";
 import TeamCard from "./TeamCard";
+import Testimonial from "@/app/Testimonial";
 
 export {
   Navbar,
@@ -24,4 +25,5 @@ export {
   ProcessCard,
   Team,
   TeamCard,
+  Testimonial,
 };

@@ -45,6 +45,11 @@ export const sectionList: ServicesInfoProps[] = [
     description:
       "Meet the skilled and experienced team behind our successful digital marketing strategies",
   },
+  {
+    title: "Testimonials",
+    description:
+      "Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services",
+  },
 ];
 
 export const servicesList: ServicesListProps[] = [
