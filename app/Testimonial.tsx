@@ -5,14 +5,24 @@ import React from "react";
 
 const Testimonial = () => {
   const [currentSlide, setCurrentSlide] = React.useState(0);
-  const slides: string[] = ["Slide 1", "Slide 2", "Slide 3", "Slide 4"];
+  const slides: string[] = [
+    "Slide 1",
+    "Slide 2",
+    "Slide 3",
+    "Slide 4",
+    "Slide 5",
+    "Slide 6",
+    "Slide 7",
+    "Slide 8",
+    "Slide 9",
+  ];
   const nextSlide = (n: number) => {
     setCurrentSlide((prevSlide) => {
       let newSlide = prevSlide + n;
       if (newSlide >= slides.length) {
         return 0;
       } else if (newSlide < 0) {
-        return slides.length - 1;
+        return slides.length - (slides.length % 3 == 0 ? 3 : slides.length % 3);
       } else {
         return newSlide;
       }
@@ -25,22 +35,28 @@ const Testimonial = () => {
         title={sectionList[4].title}
         description={sectionList[4].description}
       />
-      <div className="card mt-20 bg-black">
-        <div className="text-white slides">
+      <div className="card mt-20 bg-black text-white">
+        <div className=" slides grid grid-cols-3">
           {slides.map((slide, index) => {
             return (
               <h1
                 className={`slide text-5xl ${
-                  index === currentSlide ? "block" : "hidden"
+                  index >= currentSlide && index < currentSlide + 3
+                    ? "block"
+                    : "hidden"
                 }`}
               >
                 {slide}
               </h1>
             );
           })}
-          <a onClick={() => nextSlide(-1)}>Previous</a>
-          <a onClick={() => nextSlide(1)}>Next</a>
         </div>
+        <a onClick={() => nextSlide(-3)} className="cursor-pointer">
+          Previous
+        </a>
+        <a onClick={() => nextSlide(3)} className="cursor-pointer">
+          Next
+        </a>
       </div>
     </section>
   );
