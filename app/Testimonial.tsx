@@ -16,6 +16,7 @@ const Testimonial = () => {
     "Slide 8",
     "Slide 9",
   ];
+  const totalPages = Math.ceil(slides.length / 3);
   const nextSlide = (n: number) => {
     setCurrentSlide((prevSlide) => {
       let newSlide = prevSlide + n;
@@ -29,6 +30,9 @@ const Testimonial = () => {
     });
   };
 
+  const gotoSlide = (n: number) => {
+    setCurrentSlide(n * 3);
+  };
   return (
     <section className="mb-36">
       <SectionHeader
@@ -51,12 +55,26 @@ const Testimonial = () => {
             );
           })}
         </div>
-        <a onClick={() => nextSlide(-3)} className="cursor-pointer">
-          Previous
-        </a>
-        <a onClick={() => nextSlide(3)} className="cursor-pointer">
-          Next
-        </a>
+        <div className="flex justify-center items-center gap-24 mt-20">
+          <a onClick={() => nextSlide(-3)} className="cursor-pointer">
+            <img src="/positivus_left_arrow_icon.svg" />
+          </a>
+          <div className="flex gap-2">
+            {Array.from({ length: totalPages }).map((_, index) => {
+              return (
+                <span
+                  className={`team-star ${
+                    index === currentSlide / 3 ? "bg-yellow-500" : "bg-white"
+                  }`}
+                  onClick={() => gotoSlide(index)}
+                ></span>
+              );
+            })}
+          </div>
+          <a onClick={() => nextSlide(3)} className="cursor-pointer">
+            <img src="/positivus_right_arrow_icon.svg" />
+          </a>
+        </div>
       </div>
     </section>
   );
